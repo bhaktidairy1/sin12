@@ -61,7 +61,7 @@ def log(msg: str):
     """Print + send to web‑log."""
     print(msg)
     try:
-        requests.post("http://localhost:8080/log", data=msg)
+        requests.post("http://localhost:10000/log", data=msg)
     except:
         pass
 def drain_socket(sock, total_timeout=3.5, read_timeout=1.0):
