@@ -33,7 +33,7 @@ def log_endpoint():
     return 'OK', 200
 
 def run_web():
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=10000)
 
 def keep_alive():
     t = threading.Thread(target=run_web)
