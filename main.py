@@ -430,7 +430,7 @@ def main(port):
                     hex_send(s, "00060121" + inventory["dango"]["id"], "Eat Potion")
                     hex_recv(s, label="Potion-ACK")
                 except:
-                    hex_send(s, "00060121" + "32375e57", "Emergency Eat Potion") #TODO change for specific sin
+                    hex_send(s, "00060121" + "1f704825", "Emergency Eat Potion") #TODO change for specific sin
                     hex_recv(s, label="Potion-ACK")
             if count % 100 == 0:
                 drain_socket(s)
